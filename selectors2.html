@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+    /*body{
+        color:aqua;
+    }
+    .box p{
+        color: aquamarine;
+    }*/
+
+    /*div p{
+        color: coral; 
+    } */
+    a:hover {
+        color: pink;
+        font-size: 20px;
+    }
+    a:active{
+        color: green;
+    }
+    /*a:visited{
+    color: red;}
+    */
+    /*a:link{
+        text-decoration: none; font-size: larger;
+    }*/
+    ul{
+        list-style:none; display:flex;
+    }
+    ul li{
+        margin:20px; border-right:5px solid blue; padding-right:20px;
+    }
+    ul li:hover{
+        color: coral;
+    }
+    ul li:last-child{
+        border-right:0px;
+    }
+    .para::first line{
+        background-color: aqua;
+    }
+    .para::after{
+        content:"Read more";
+        color: yellowgreen;
+        font-size:20px;
+    }
+    </style>
+</head>
+<body>
+    <!--CSS Combinaters-->
+    
+    <div class="box">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam at aliquam deserunt similique quisquam ipsam id sequi nihil quia unde soluta nisi rerum assumenda quibusdam optio recusandae tenetur incidunt corporis est, saepe animi cupiditate eum! Numquam error laboriosam pariatur dolorum neque, ab, qui magni unde fugit suscipit ex sunt officia!
+        </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequuntur impedit voluptates rem id voluptatibus officia enim perferendis atque odit! Accusamus, consequuntur quidem. Assumenda mollitia vitae est accusantium inventore ex nobis perferendis veniam reprehenderit consequuntur, obcaecati beatae ipsam autem error incidunt hic soluta aliquam ea amet dolore? Iusto reiciendis, magnam dolorem libero, repellat maiores vel velit nihil eos, commodi expedita.</p>
+    <!--CSS Pseudo-classes:style for a speaccial state of an element-->
+    <a href="">Visit this link </a>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+    
+    
+
+</body>
+</html>

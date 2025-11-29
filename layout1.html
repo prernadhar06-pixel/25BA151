@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        html, * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 900px;
+            height: auto;
+            background-color: skyblue;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for logo, nav, header, section, footer */
+        #logo, nav, header, section, footer {
+            width: 90%;
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+        }
+
+        #right {
+            width: 50%;
+            background: lightgreen;
+            padding: 20px;
+            border: 2px solid darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <nav><h2>Navigation</h2></nav>
+        <header><h2>Header / Banner</h2></header>
+
+        <section>
+            <div id="right"><h2>Right</h2></div>
+        </section>
+
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>

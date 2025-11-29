@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Structure</title>
+
+<style>
+    .container {
+        width: 350px;
+        margin: 20px auto;
+        border: 3px solid teal;
+        padding: 5px;
+        background: #e3ffe3;
+    }
+
+    header, nav, section, aside, article, footer {
+        border: 2px solid cyan;
+        margin: 5px;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .middle {
+        display: flex;
+        gap: 5px;
+    }
+
+    section {
+        flex: 2;
+        height: 100px;
+        background-color: #c3c3c3;
+    }
+
+    aside {
+        flex: 2;
+        height: 100px;
+        background-color: #f3a483;
+    }
+
+    article {
+        flex: 2;
+        height: 100px;
+        background-color: #89f0ff;
+    }
+
+    header {
+        background-color: #ff9a7d;
+    }
+
+    nav {
+        background-color: #72d0ff;
+    }
+
+    footer {
+        background-color: #8782ff;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <header> &lt;header&gt; </header>
+    <nav> &lt;nav&gt; </nav>
+
+    <div class="middle">
+        <section> &lt;section&gt; </section>
+        <aside> &lt;aside&gt; </aside>
+    </div>
+
+    <article> &lt;article&gt; </article>
+    <footer> &lt;footer&gt; </footer>
+</div>
+
+</body>
+</html>

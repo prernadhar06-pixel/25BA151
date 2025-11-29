@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        body{margin: 0;
+        padding: 0}
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; color: black;
+        }
+        main{
+            width: 800px;
+            height: 600px;
+            background-color: black;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+        header, nav{
+           height: 100px;
+           background-color: skyblue; line-height: 50px;
+        }
+        footer{
+            height: 100px;
+           background-color: lightpink; line-height: 50px;
+        }
+        section{
+            height: 300px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #left{
+            flex-grow: 2;
+            background-color: bisque;
+        }
+        #right{
+            flex-grow: 1;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #rgt_top, #rgt_btm{
+            height: 150px;
+            background-color:yellow; 
+            line-height: 100px;
+        }
+        #left_top{
+            height: 30px;
+            background-color: red;
+        }
+        #left_middle{
+            height: 70px;
+            background-color: khaki;
+        }
+
+        #left_down {
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            flex-direction: row;
+            height: 200px;
+            gap: 10px; color: black;
+        }
+        #left_btm1, #left_btm2{
+            width: 200px; 
+            height: 200px;
+            background-color: #f7d298; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            
+        }
+      
+        /*#left_btm1, #left_btm2 {
+            flex-grow: 1; 
+            background-color: #ff9933; 
+            line-height: 200px; 
+            font-weight: bold;
+        }
+        #left_btm{
+            height:50px ; 
+            flex-grow: 1;
+            background-color: orange;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;      }*/
+       
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header><h2>#Header</h2></header>
+
+        <nav><h2>#Nav</h2></nav>
+
+        <section>
+         <div id="left">
+            <div id="left_top"><h2>#Page Title</h2></div>
+            <div id="left_middle"><h2>#Content 01</h2></div>
+            <div id="left_down">
+                <div class="left_btm1"><h2>#Content02</h2></div>
+                <div class="left_btm2"><h2>#Content 03</h2></div>
+
+            </div>
+         </div>
+         <div id="right">
+            <div id="rgt_top"><h2>Right Top</h2></div>
+            <div id="rgt_btm"><h2>Right Bottom</h2></div>
+         </div>    
+        </section>
+
+        <footer><h2>#Footer</h2></footer>
+    </main>
+</body>
+</html>
